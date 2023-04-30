@@ -1,0 +1,18 @@
+@import 'variables';
+@import 'resets';
+@import 'mixins';
+@import 'navbar';
+@import 'banner';
+@import 'bannermsg';
+@import 'services';
+@import 'products';
+@import 'faqs';
+@import 'footer';
+
+body{
+    max-width: 1920px;
+}
+
+html{
+    scroll-behavior: smooth;
+}
