@@ -1,0 +1,228 @@
+.footer{
+    width: 100%;
+    background: #F3F3F3 0% 0% no-repeat padding-box;
+    padding-top: 80px;
+    position: relative;
+}
+
+.footer__flowertwelve{
+    @include absoluteBackgrounds('../assets/images/cvet12.png');
+    position: absolute;
+    top: 146px;
+    right: 587px;
+    width: 115px;
+    height: 114px;
+}
+
+.footer__leafthirteen{
+    @include absoluteBackgrounds('../assets/images/list13.png');
+    position: absolute;
+    top: 201px;
+    left: 684px;
+    width: 68px;
+    height: 57px;
+}
+
+.footer__leaffourteen{
+    @include absoluteBackgrounds('../assets/images/list14.png');
+    position: absolute;
+    bottom: 130px;
+    right: 567px;
+    width: 108px;
+    height: 114px;
+}
+
+.footer__top{
+    max-width: 1134px;
+    margin: 20px auto 20px;
+    @include flexBox(row, space-between, center, 174px);
+}
+
+.footer__top-title{
+    font: normal normal normal 30px/45px Prata;
+    color: $color4;
+}
+
+.footer__top-link{
+    @include buttonLink(41px, 213px);
+    text-transform: capitalize;
+}
+
+.footer__logo{
+    max-width: 1134px;
+    margin: 20px auto 20px;
+}
+
+.footer__logo-img{
+    width: 136px;
+    height: 76px;
+    background: transparent url('../assets/images/logo-footer.png') 0% 0% no-repeat padding-box;
+}
+
+.footer__contact{
+    max-width: 1134px;
+    margin: 20px auto 91px;
+    @include flexBox(row, flex-start, center, 0);
+}
+
+.footer__contact-title{
+    color: $color4;
+    font: normal normal normal 50px/60px Prata;
+    padding-right: 50px;
+
+}
+
+.footer__contact-infos{
+    @include flexBox(column, flex-start, flex-start, 10px);
+    margin-right: 50px;
+    margin-left: 50px;
+}
+
+.footer__contact-info{
+    @include flexBox(row, center, center, 10px);
+}
+
+.footer__contact-info--phone{
+    background: transparent url('../assets/images/Icon\ material-local-phone.png') 0% 0% no-repeat padding-box;
+    width: 15px;
+    height: 15px;
+}
+
+.footer__contact-info--message{
+    background: transparent url('../assets/images/Icon\ awesome-envelope.png') 0% 0% no-repeat padding-box;
+    width: 15px;
+    height: 11px;
+}
+
+.footer__contact-info--place{
+    background: transparent url('../assets/images/Icon\ material-location-on.png') 0% 0% no-repeat padding-box;
+    height: 19px;
+    width: 13px;
+}
+
+.footer__contact-info--text{
+    font: normal normal normal 16px/26px Barlow;
+    color: $color5;
+}
+
+.footer__contact-time{
+    margin-right: 30px;
+}
+
+.footer__contact-time--header{
+    @include flexBox(row, flex-start, center, 5px);
+}
+
+.footer__contact-time--header---clock{
+    background: transparent url('../assets/images/Icon\ weather-time-8.png') 0% 0% no-repeat padding-box;
+    width: 17px;
+    height: 17px;
+}
+
+.footer__contact-time--header---title{
+    color: $color4;
+    font: normal normal 600 16px/26px Barlow;
+}
+
+.footer__contact-time--timetable{
+    font: normal normal normal 16px/26px Barlow;
+}
+
+.footer__contact-social{
+    align-self: flex-start;
+    padding: 8px;
+}
+
+.footer__contact-social--title{
+    color: $color4;
+    font: normal normal 600 16px/26px Barlow;
+}
+
+.footer__contact-social--network{
+    @include flexBox(row, flex-start, center, 20px);
+    margin-top: 20px;
+}
+
+.footer__contact-social--facebook{
+    background: transparent url('../assets/images/Icon\ zocial-facebook.png') 0% 0% no-repeat padding-box;
+    height: 17px;
+    width: 9px;
+}
+
+.footer__contact-social--instagram{
+    background: transparent url('../assets/images/Icon\ simple-instagram.png') 0% 0% no-repeat padding-box;
+    height: 17px;
+    width: 17px;
+}
+
+.footer__blank{
+    margin: 20px auto 40px;
+    height: 1px;
+    width: 1134px;
+    background: $color1;
+}
+
+.footer__links{
+    margin: 20px auto 20px;
+    max-width: 1134px;
+    @include flexBox(row, flex-start, center, 127px);
+    margin-bottom: 86px;
+}
+
+.footer__links-menu--title, .footer__links-services--title{
+    color: $color3;
+    font: normal normal normal 16px/26px Prata;
+    padding-left: 13.5px;
+}
+
+.footer__links-menu--container---link, .footer__links-services--container---link{
+    color: $color5;
+    font: normal normal normal 16px/26px Barlow;
+    display: inline-block;
+    padding-right: 13.5px;
+    padding-left: 13.5px;
+    border-bottom: 2px solid transparent;
+
+    &:hover{
+        color: $color4;
+        border-bottom: 2px solid $color4;
+    }
+}
+
+.footer__bottom{
+    background: $color4;
+    @include flexBox(row, center, center, 0);
+    width: 100%;
+}
+
+.footer__bottom-text{
+    text-transform: capitalize;
+    color: $color1;
+    padding: 10px 5px;
+    font: normal normal normal 12px/15px PlayfairDisplay;
+}
+
+.footer__bottom-space{
+    width: 1px;
+    height: 16px;
+    background: $color1;
+}
+
+@media  screen and (max-width: 1500px) {
+
+    .footer__top, .footer__logo, .footer__contact, .footer__blank, .footer__links{
+        min-width: 90%;
+    }
+
+    .footer__logo{
+        margin-left: 70px;
+    }
+
+    .footer__contact-title{
+        padding-left: 70px;
+    }
+
+    .footer__top{
+        justify-content: center;
+    }
+}

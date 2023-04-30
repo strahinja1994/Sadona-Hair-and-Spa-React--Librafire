@@ -1,0 +1,122 @@
+.products{
+    background: $color1;
+    margin: 40px auto 40px;
+    position: relative;
+}
+
+.products__flowernine{
+    @include absoluteBackgrounds('../assets/images/cvet9.png');
+    position: absolute;
+    top: -40px;
+    right: 571px;
+    width: 65px;
+    height: 60px;
+}
+
+.products__leafeleven{
+    @include absoluteBackgrounds('../assets/images/list11.png');
+    position: absolute;
+    top: 113px;
+    left: 490px;
+    width: 80px;
+    height: 56px;
+}
+
+.products__pointer{
+    width: 109px;
+    height: 1px;
+    background: $color4;
+    margin: 40px auto 40px;
+}
+
+.products__title{
+    text-align: center;
+    font: normal normal normal 30px/45px Prata;
+    color: $color4;
+}
+
+.products__text{
+    text-align: center;
+    font: normal normal normal 16px/26px Barlow;
+    color: $color5;
+}
+
+.products__banner{
+    max-width: 1134px;
+    height: 319px;
+    min-height: fit-content;
+    background: $color4;
+    margin: 40px auto 40px;
+    border-radius: 0 100px 0 100px;
+    @include flexBox(row, center, flex-start, 0);
+
+    &:hover{
+        background: $color3;
+
+        .products__banner-content--images---title, .products__banner-title, .products__banner-more--text{
+            color: $color4;
+        }
+
+        .products__banner-content--images---icon{
+            background: transparent url('../assets/images/newspaper-2x.png') 0% 0% no-repeat padding-box;
+        }
+
+        .products__banner-more--icon{
+            background: transparent url('../assets/images/Icon\ open-arrow-right-brown.png') 0% 0% no-repeat padding-box;
+        }
+    }
+}
+
+.products__banner-content{
+    width: 50%;
+}
+
+.products__banner-content--images{
+    @include flexBox(row, flex-start, center, 20px);
+    margin: 40px 40px 5px 40px;
+}
+
+.products__banner-content--images---icon{
+    width: 35px;
+    height: 32px;
+    background: transparent url('../assets/images/shipping.png') 0% 0% no-repeat padding-box;
+}
+
+.products__banner-content--images---title{
+    font: normal normal normal 25px/30px Cookie;
+    color: $color3;
+}
+
+.products__banner-title{
+    font: normal normal normal 50px/60px Prata;
+    color: $color1;
+    padding: 5px 40px 10px 40px;
+}
+
+.products__banner-text{
+    font: normal normal normal 16px/26px Barlow;
+    color: $color1;
+    padding: 10px 20px 20px 40px;
+}
+
+.products__banner-more{
+    @include flexBox(row, flex-end, center, 10px);
+    padding: 20px 20px 0px 20px;
+}
+
+.products__banner-more--icon{
+    height: 6px;
+    width: 11px;
+    background: transparent url('../assets/images/Icon\ open-arrow-bottom.png') 0% 0% no-repeat padding-box;
+}
+
+.products__banner-more--text{
+    font: normal normal normal 12px/15px Barlow;
+    color: $color3;
+}
+
+.products__banner-image{
+    width: 50%;
+    height: 100%;
+    border-radius: 0 100px 0 100px;
+}

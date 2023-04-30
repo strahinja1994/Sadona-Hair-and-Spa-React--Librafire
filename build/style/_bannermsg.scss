@@ -1,0 +1,67 @@
+.bannermsg{
+    width: 100%;
+    background: $color3;
+    padding-bottom: 40px;
+    position: relative;
+}
+
+.bannermsg__title{
+    text-align: center;
+    font: normal normal normal 30px/45px Prata;
+    color: $color1;
+    text-transform: capitalize;
+    padding: 40px 20px 5px 20px;
+}
+
+.bannermsg__text{
+    text-align: center;
+    font: normal normal normal 16px/26px Prata;
+    color: $color4;
+    padding: 5px 20px 20px 20px;
+}
+
+.bannermsg__link{
+    @include buttonLink(41px, 159px);
+    padding: 5px 10px;
+    margin-left: 50%;
+    transform: translateX(-50%);
+}
+
+.bannermsg__flowerfour{
+    @include absoluteBackgrounds('../assets/images/cvet4.png');
+    position: absolute;
+    right:623px;
+    bottom: -50px;
+    width: 111px;
+    height: 102px;
+
+}
+
+.bannermsg__leaffour{
+    @include absoluteBackgrounds('../assets/images/list4.png');
+    position: absolute;
+    top: 50px;
+    left: 623px;
+    width: 59px;
+    height: 50px;
+}
+
+.bannermsg__leaffive{
+    @include absoluteBackgrounds('../assets/images/list5.png');
+    position: absolute;
+    top: 40px;
+    right: 587px;
+    width: 62px;
+    height: 45px;
+}
+
+@media screen and (max-width:1700px) {
+
+    .bannermsg__leaffour{
+        left: 323px;
+    }
+
+    .bannermsg__leaffive{
+        right: 287px;
+    }
+}

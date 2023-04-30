@@ -1,0 +1,218 @@
+.faqs{
+    min-height: 1113px;
+    width: 100%;
+    background: $color2;
+}
+
+.faqs__header{
+    max-width: 1134px;
+    margin: auto;
+    padding-top: 40px;
+    position: relative;
+}
+
+.faqs__header-flowerten{
+    @include absoluteBackgrounds('../assets/images/cvet10.png');
+    position: absolute;
+    top: -20px;
+    right: 401px;
+    width: 65px;
+    height: 60px;
+}
+
+.faqs__header-leaftwelve{
+    @include absoluteBackgrounds('../assets/images/list12.png');
+    position: absolute;
+    bottom: -40px;
+    right: 501px;
+    width: 61px;
+    height: 51px;
+}
+
+.faqs__header-images{
+    @include flexBox(row, flex-start, center, 10px);
+}
+
+.faqs__header-images--information{
+    width: 31px;
+    height: 31px;
+    background: transparent url('../assets/images/information.png') 0% 0% no-repeat padding-box;
+}
+
+.faqs__header-images--title{
+    font: normal normal normal 25px/30px Cookie;
+    color: $color4;
+}
+
+.faqs__header-info{
+    @include flexBox(row, space-between, center, 0);
+    margin-bottom: 40px;
+}
+
+.faqs__header-info--title{
+    text-transform: capitalize;
+    color: $color5;
+    font: normal normal normal 50px/60px Prata;
+}
+
+.faqs__header-info--link{
+    @include buttonLink(41px, 218px);
+}
+
+.faqs__main{
+    min-height: 924px;
+    background: $color7;
+    position: relative;
+}
+
+.faqs__main-flowereleven{
+    @include absoluteBackgrounds('../assets/images/cvet11.png');
+    position: absolute;
+    top: 4px;
+    left: 485px;
+    width: 108px;
+    height: 114px;
+}
+
+.faqs__main-title{
+    text-align: center;
+    padding: 80px 20px 20px 20px;
+    font: normal normal normal 50px/60px Prata;
+    color: $color4;
+}
+
+.faqs__main-cards{
+    @include flexBox(row, center, center, 0);
+}
+
+.faqs__main-cards--card{
+    margin: 16px;
+    width: 357px;
+    border-radius: 100px 0 100px 0;
+    background: $color2;
+    
+
+    &:hover{
+        transition: 0.3s ease-out;
+        animation: auto;
+        background: $color4;
+        transform: translateY(-20px);
+
+        .faqs__main-cards--card---title{
+            color: $color1;
+        }
+
+        .faqs__main-cards--card---icons----title{
+            color: $color3;
+        }
+
+        .faqs__main-cards--card---icons----img{
+            background: transparent url('../assets/images/shipping.png') 0% 0% no-repeat padding-box;
+        }
+        
+        .faqs__main-cards--card---text{
+            color: $color1;
+        }
+
+        .faqs__main-cards--card---more----text{
+            color: $color3;
+        }
+
+        .faqs__main-cards--card---more----icon{
+            background: transparent url('../assets/images/Icon\ open-arrow-bottom.png') 0% 0% no-repeat padding-box;
+        }
+
+        .faqs__main-cards--card---timetable----date, .faqs__main-cards--card---timetable----time{
+            color: $color3;
+        }
+
+        .faqs__main-cards--card---timetable----pointer{
+            background: $color3;
+        }
+    }
+}
+
+.faqs__main-cards--card---image{
+    height: 311px;
+    width: 100%;
+    border-radius: 100px 0 0px 0;
+}
+
+.faqs__main-cards--card---icons{
+    @include flexBox(row, flex-start, center, 10px);
+    margin-left: 30px;
+}
+
+.faqs__main-cards--card---icons----img{
+    height: 16px;
+    width: 18px;
+    background: transparent url('../assets/images/newspaper.png') 0% 0% no-repeat padding-box;
+}
+
+.faqs__main-cards--card---icons----title{
+    font: normal normal normal 25px/30px Cookie;
+    color: $color4;
+}
+
+.faqs__main-cards--card---title{
+    font: normal normal normal 30px/45px Prata;
+    color: $color5;
+    text-align: left;
+    padding: 10px 30px;
+}
+
+.faqs__main-cards--card---timetable{
+    @include flexBox(row, flex-start, center, 0)
+}
+
+.faqs__main-cards--card---timetable----date{
+    color: $color4;
+    font: normal normal normal 12px/15px Barlow;
+    padding: 10px 10px 10px 30px;
+}
+
+.faqs__main-cards--card---timetable----time{
+    color: $color4;
+    font: normal normal normal 12px/15px Barlow;
+    padding: 10px 10px 10px 5px;
+}
+
+.faqs__main-cards--card---timetable----pointer{
+    width: 40%;
+    height: 1px;
+    background: $color4;
+}
+
+.faqs__main-cards--card---text{
+    text-align: left;
+    font: normal normal normal 16px/26px Barlow;
+    padding: 5px 30px 50px 30px;
+}
+
+.faqs__main-cards---card---more{
+    @include flexBox(row, flex-start, center, 0px);
+}
+
+.faqs__main-cards--card---more----text{
+    color: $color4;
+    font: normal normal normal 12px/15px Barlow;
+    padding: 10px 10px 30px 30px;
+}
+
+.faqs__main-cards--card---more----icon{
+    background: transparent url('../assets/images/Icon\ open-arrow-bottom.png') 0% 0% no-repeat padding-box;
+    width: 11px;
+    height: 6px;
+    margin-bottom: 20px;
+}
+
+@media screen and (max-width: 1300px) {
+
+    .faqs__header-info, .faqs__header-images{
+        margin-left: 70px;
+    }
+
+    .faqs__header-info--link{
+        margin-right: 70px;
+    }
+}

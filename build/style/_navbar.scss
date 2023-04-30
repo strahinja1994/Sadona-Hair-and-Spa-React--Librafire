@@ -1,0 +1,92 @@
+.navbar{
+    width: 100%;
+    @include flexBox(row, center, center, 0);
+    background: $color4;
+}
+
+.navbar__left, .navbar__right{
+    @include flexBox(row, center,center, 0);
+}
+
+.navbar__left-link, .navbar__right-link{
+    font: normal normal normal 20px/25px Barlow;
+    color: $color3;
+    padding: 44px 24px;
+    position: relative;
+    display: inline-block;
+    transition: all 0.3s ease-out;
+    border-bottom: 2px solid transparent;
+
+    &:hover{
+        @extend .navbar__left-link-active;
+    }
+}
+
+.navbar__left-link-active{
+    color: $color1;
+    border-bottom-color: $color1;
+}
+
+.navbar__logo{
+    margin: 10px 165px 10px 141px;
+}
+
+.navbar__left-sources{
+    @include flexBox(row, center, center, 10px);
+
+    &:hover{
+        background: transparent url('../assets/images/Icon\ ionic-ios-arrow-back.png') 0% 0% no-repeat padding-box;
+    }
+}
+
+.navbar__left-link--icon{
+    margin-top: 5px;
+    width: 15px;
+    height: 5px;
+    background: transparent url('../assets/images/Icon\ ionic-ios-arrow-back.png') 0% 0% no-repeat padding-box;
+}
+
+.relative-list-item{
+    position: relative;
+    display: inline-block;
+
+    &:hover{
+        .navbar__left-sources--links{
+            display: block;
+            opacity: 1;
+        }
+    }
+}
+
+.navbar__left-sources{
+    border-bottom: 2px solid transparent !important;
+}
+
+.navbar__left-sources--links{
+    z-index: 3;
+    background: $color3;
+    position: absolute;
+    width: 85%;
+    margin: auto;
+    @include flexBox(column, center,center, 0px);
+    display: none;
+    transition: opacity 0.3s ease-out;
+}
+
+.navbar__left-sources--links---link{
+    display: block;
+    font: normal normal normal 15px/20px Barlow;
+    padding: 10px 10px;
+    color: $color4;
+    text-align: center;
+
+    &:hover{
+        color: $color1;
+    }
+}
+
+@media screen and (max-width: 1500px) {
+    .navbar__logo{
+        margin: 10px 20px;
+    }
+}

@@ -1,0 +1,478 @@
+.services{
+    background: $color1;
+}
+
+.services__title{
+    @extend .products__title;
+}
+
+.services__text{
+    @extend .products__text;
+}
+
+.services__pointerone{
+    width: 109px;
+    height: 1px;
+    background: $color5;
+    margin: 40px auto 40px;
+}
+
+.services__pointertwo{
+    width: 109px;
+    height: 1px;
+    background: $color4;
+    margin: 40px auto 40px;
+}
+
+.services__link{
+    @include buttonLink(41px, 105px);
+    margin: 20px auto 20px;
+}
+
+//salon
+.services__salon{
+    margin: 40px auto 160px;
+    width: 1134px;
+    height: 357px;
+    min-height: fit-content;
+    @include flexBox(row, flex-end,center,0);
+    position: relative;
+}
+
+.services__flowerfive{
+    @include absoluteBackgrounds('../assets/images/cvet5.png');
+    position: absolute;
+    top: 20px;
+    left: 238px;
+    width: 83px;
+    height: 97px;
+}
+
+.services__leafsix{
+    position: absolute;
+    top: -87px;
+    right: 167px;
+    width: 61px;
+    height: 52px;
+    @include absoluteBackgrounds('../assets/images/list6.png');
+}
+
+.services__leafseven{
+    position: absolute;
+    bottom: -113px;
+    left: 200px;
+    width: 72px;
+    height: 49px;
+    @include absoluteBackgrounds('../assets/images/list7.png');
+}
+
+.services__salon-center{
+    width: 939px;
+    height:100%;
+    border-radius: 200px 0 0 0;
+}
+
+.services__salon-content{
+    position: absolute;
+    bottom:0;
+    left:0;
+    background: transparent;
+    width: 358px;
+}
+
+.services__salon-content--images{
+    @include flexBox(row, flex-start, center, 20px);
+    padding: 0px 10px 12px 10px;
+}
+
+.services__salon-content--images---icon{
+    width: 36px;
+    height: 36px;
+    background: transparent url('../assets/images/salon.png') 0% 0% no-repeat padding-box;
+}
+
+.services__salon-content--images---title{
+    font: normal normal normal 25px/30px Cookie;
+    color: $color4;
+}
+
+.services__salon-content--title{
+    font: normal normal normal 50px/60px Prata;
+    color: $color5;
+    padding: 12px 10px 10px 0;
+}
+
+.services__salon-content--text{
+    font: normal normal normal 16px/26px Barlow;
+    color: $color5;
+    padding: 12px 10px 10px 0;
+}
+
+.services__salon-content--link{
+    @include buttonLink(41px, 120px);
+}
+
+.services__salon-side{
+    position: absolute;
+    right: 0;
+    bottom: -70px;
+    display: flex;
+}
+
+.services__salon-side--img{
+    width: 455px;
+    height: 207px;
+    border-radius: 50px 0 50px 0;
+    order: 2;
+}
+
+.services__salon-side--more{
+    @include flexBox(row, flex-start, center, 20px);
+    order: 1;
+    margin: 150px 40px 0 20px;
+}
+
+.services__salon-side--more---icon{
+    width: 6px;
+    height: 11px;
+    background: transparent url('../assets/images/Icon\ open-arrow-bottomBrown.png') 0% 0% no-repeat padding-box;
+}
+
+.services__salon-side--more---text{
+    font: normal normal normal 12px/15px Barlow;
+    color: $color4;
+}
+
+@media screen and (max-width: 1500px) {
+    .services__salon{
+        max-width: 100%;
+        @include flexBox(row, center,center,0);
+    }
+
+    .services__salon-center{
+        max-width: 90%;
+        min-width: 924px;
+        position: relative;
+    }
+
+    .services__salon-content{
+        position: absolute;
+        left: 0;
+        top: 30px;
+        z-index: 2;
+        margin-left: 30px;
+    }
+
+    .services__salon-side{
+        position: absolute;
+        right: 100px;
+        bottom: -50px;
+        display: flex;
+    }
+    
+}
+
+//spa
+.services__spa{
+    width: 100%;
+    height: 464px;
+    min-height: fit-content;
+    margin: 40px auto 40px;
+    position: relative;
+    @include flexBox(row, flex-end, center, 0);
+}
+
+.services__spa-content{
+    height: 100%;
+    width: 878px;
+    position: absolute;
+    top:0;
+    left:0;
+    background: $color4;
+    border-radius: 0 200px 0 0;
+}
+
+.services__spa-img{
+    width: 1200px;
+    height: 464px;
+    object-fit: cover;
+    position: relative;
+}
+
+.services__spa-img--flowersix{
+    position: absolute;
+    bottom: 40px;
+    left: 815px;
+    bottom: 40px;
+    width: 109px;
+    height: 100px;
+    z-index: 2;
+    @include absoluteBackgrounds('../assets/images/cvet6.png');
+}
+
+.services__spa-img--leafeight{
+    @include absoluteBackgrounds('../assets/images/list8.png');
+    position: absolute;
+    bottom: 22px;
+    right: 720px;
+    width: 59px;
+    height: 50px;
+    z-index: 2;
+}
+
+.services__spa-content--images{
+    @include flexBox(row, flex-start, center, 20px);
+    margin: 84px 40px 12px 393px;
+}
+
+.services__spa-content--images---icon{
+    width: 32px;
+    height: 36px;
+    background: transparent url('../assets/images/candle.png') 0% 0% no-repeat padding-box;
+}
+
+.services__spa-content--images---title{
+    font: normal normal normal 25px/30px Cookie;
+    color: $color7;
+}
+
+.services__spa-content--title{
+    font: normal normal normal 50px/60px Prata;
+    color: $color1;
+    padding: 12px 40px 10px 393px;
+}
+
+.services__spa-content--text{
+    font: normal normal normal 16px/26px Barlow;
+    color: $color1;
+    padding: 12px 40px 10px 393px;;
+}
+
+.services__spa-content--link{
+    @include buttonLink(41px, 120px);
+    background: $color7;
+    color: $color5;
+    border: 1px solid $color3;
+    margin: 10px 40px 40px 393px;
+
+    &:hover{
+        background: $color3;
+        color: $color1;
+    }
+}
+
+.services__spa-content--more{
+    @include flexBox(row, flex-start, center, 20px);
+    margin: 41px 40px 40px 393px;
+}
+
+.services__spa-content--more---icon{
+    width: 6px;
+    height: 11px;
+    background: transparent url('../assets/images/Icon\ open-arrow-bottom-light.png') 0% 0% no-repeat padding-box;
+}
+
+.services__spa-content--more---text{
+    font: normal normal normal 12px/15px Barlow;
+    color: $color7;
+}
+
+@media screen and (max-width: 1700px) {
+
+    .services__spa-content{
+        width: 500px;
+    }
+
+    .services__spa-content--title, .services__spa-content--text{
+        padding-left: 70px;
+    }
+
+    .services__spa-content--images, .services__spa-content--more, .services__spa-content--link{
+        margin-left: 70px;
+    }
+}
+
+//bridal
+.services__bridal{
+    width: 1134px;
+    height: 516px;
+    min-height: fit-content;
+    background-image: url(../assets/images/cover3.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 40px auto 40px;
+    border-radius: 0 200px 0 200px;
+    position: relative;
+    @include flexBox(row, flex-end, flex-start, 0);
+}
+
+.services__bridal-background{
+    position: absolute;
+    top:0;
+    right:0;background: #FFFFFF 0% 0% no-repeat padding-box;
+    border-radius: 0px 200px 0px 0px;
+    opacity: 0.41;
+    width: 468px;
+    height: 516px;
+}
+
+.services__bridal-content{
+    width: 468px;
+    height: 516px;
+    min-height: fit-content;
+    isolation: isolate;
+    position: relative;
+}
+
+.services__bridal-flowerseven{
+    position: absolute;
+    top:0;
+    right: 15px;
+    width: 146px;
+    height: 144px;
+    @include absoluteBackgrounds('../assets/images/cvet7.png');
+}
+
+.services__bridal-leafnine{
+    position: absolute;
+    bottom: 52px;
+    right: 97px;
+    width: 106px;
+    height: 74px;
+    @include absoluteBackgrounds('../assets/images/list9.png');
+}
+
+.services__bridal-content--images{
+    @include flexBox(row, flex-start, center, 20px);
+    margin: 80px 40px 10px 40px;
+}
+
+.services__bridal-content--images---icon{
+    width: 35px;
+    height: 36px;
+    background: transparent url('../assets/images/bride.png') 0% 0% no-repeat padding-box;
+}
+
+.services__bridal-content--images---title{
+    font: normal normal normal 25px/30px Cookie;
+    color: $color4;
+}
+
+.services__bridal-content--title{
+    font: normal normal normal 50px/60px Prata;
+    color: $color5;
+    padding: 10px 40px 10px 40px;
+}
+
+.services__bridal-content--text{
+    font: normal normal normal 16px/26px Barlow;
+    color: $color4;
+    padding: 10px 40px;
+}
+
+.services__bridal-content--link{
+    @include buttonLink(41px, 120px);
+    margin: 10px 40px 40px 40px;
+}
+
+.services__bridal-content--more{
+    @include flexBox(row, flex-start, center, 20px);
+    margin: 40px;
+}
+
+.services__bridal-content--more---icon{
+    width: 6px;
+    height: 11px;
+    background: transparent url('../assets/images/Icon\ open-arrow-bottomBrown.png') 0% 0% no-repeat padding-box;;
+}
+
+.services__bridal-content--more---text{
+    font: normal normal normal 12px/15px Barlow;
+    color: $color4;
+}
+
+@media screen and (max-width: 1300px){
+    .services__bridal{
+        width: 90%;
+    }
+}
+
+// salt
+.services__salt{
+    width: 100%;
+    background: $color3;
+    height: 372px;
+    min-height: fit-content;
+    margin: 40px auto 40px;
+    @include flexBox(row, center, flex-start, 0);
+    position: relative;
+}
+
+.services__salt-flowereight{
+    position: absolute;
+    top:10px;
+    left: 751px;
+    width: 162px;
+    height: 171px;
+    @include absoluteBackgrounds('../assets/images/cvet8.png');
+}
+
+.services__salt-leaften{
+    position: absolute;
+    bottom: 15px;
+    left: 862px;
+    width: 61px;
+    height: 51px;
+    @include absoluteBackgrounds('../assets/images/list10.png');
+}
+
+.services__salt-info--images{
+    @include flexBox(row, flex-start, center, 20px);
+    margin: 80px 20px 20px 393px;
+}
+
+.services__salt-info--images---icon{
+    background: transparent url('../assets/images/sugar.png') 0% 0% no-repeat padding-box;
+    width: 37px;
+    height: 33px;
+}
+
+.services__salt-info--images---title{
+    font: normal normal normal 25px/30px Cookie;
+    color: $color4;
+}
+
+
+.services__salt-info--title{
+    font: normal normal normal 50px/60px Prata;
+    color: $color1;
+    padding: 22px 20px 10px 393px;
+}
+
+.services__salt-info--text{
+    font: normal normal normal 16px/26px Barlow;
+    color: $color1;
+    padding: 10px 30px 80px 393px;
+}
+
+.services__salt-image{
+    width: 552px;
+    height: 100%;
+    margin-right: 393px;
+    border-radius: 0 100px 0 0;
+}
+
+@media screen and (max-width: 1700px) {
+    .services__salt-info--text, .services__salt-info--title{
+        padding-left: 70px
+    }
+
+    .services__salt-info--images{
+        margin-left: 70px;
+    }
+
+    .services__salt-image{
+        margin-right: 100px;
+    }
+}

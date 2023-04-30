@@ -1,0 +1,259 @@
+.banner{
+    width: 100%;
+    height: 950px;
+    background-image: url(../assets/images/banner.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.banner__salon{
+    font-size: 50px;
+    font: normal normal normal 50px/60px cookie;
+    padding: 202px 75px 0px 393px; 
+    color: $color1;
+}
+
+.banner__experience{
+    font-size: 70px;
+    text-transform: capitalize;
+    font: normal normal normal 70px/80px Prata;
+    color: $color1;
+    padding: 0 75px 20px 393px;
+}
+
+.banner__link{
+    position: absolute;
+    left: 393px;
+    top: 442px;
+    @include buttonLink(41px, 95px);
+}
+
+.banner__flowerone{
+    position: absolute;
+    top: 67px;
+    left: 407px;
+    width: 110px;
+    height: 101px;
+    @include absoluteBackgrounds('../assets/images/cvet1.png');
+}
+
+.banner__flowertwo{
+    position: absolute;
+    top: 150px;
+    left: 1049px;
+    width: 90px;
+    height: 83px;
+    @include absoluteBackgrounds('../assets/images/cvet2.png');
+}
+
+.banner__flowerthree{
+    position: absolute;
+    top: 459px;
+    left: 661px;
+    width: 120px;
+    height: 141px;
+    @include absoluteBackgrounds('../assets/images/cvet3.png');
+}
+
+.banner__leafone{
+    position: absolute;
+    top: 146px;
+    left: 751px;
+    height: 52px;
+    width: 61px;
+    @include absoluteBackgrounds('../assets/images/list1.png');
+}
+
+.banner__leaftwo{
+    position: absolute;
+    right: 100px;
+    bottom: 277px;
+    height: 59px;
+    width: 69px;
+    @include absoluteBackgrounds('../assets/images/list2.png');
+}
+
+.banner__leafthree{
+    position: absolute;
+    left: 491px;
+    bottom: 106px;
+    height: 72px;
+    width: 104px;
+    @include absoluteBackgrounds('../assets/images/list3.png');
+}
+
+.banner__facebook{
+    position: absolute;
+    left: 394px;
+    bottom: 108px;
+    height: 24px;
+    width: 12px;
+    @include absoluteBackgrounds('../assets/images/Icon zocial-facebook.png');
+}
+
+.banner__instagram{
+    position: absolute;
+    left: 394px;
+    bottom: 76px;
+    height: 12px;
+    width: 12px;
+    @include absoluteBackgrounds('../assets/images/Icon simple-instagram.png');
+}
+
+.banner__pointer{
+    position: absolute;
+    left: 400px;
+    bottom: 0px;
+    width: 1px;
+    height: 56px;
+    background: $color1;
+}
+
+.banner__slider{
+    @include flexBox(row, center, center, 0);
+    margin-top: 391px;
+}
+
+.banner__slider-left, .banner__slider-right{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 1px solid $color1;
+    margin: 20px;
+
+    &:hover{
+        background: #88898a;
+    }
+}
+
+.banner__slider-left--icon{
+    background: transparent url('../assets/images/Icon\ ionic-ios-arrow-slider-left.png') 0% 0% no-repeat padding-box;
+    background-position: center;
+    margin: 5px auto 5px;
+    height: 18px;
+    width: 14px;
+}
+
+.banner__slider-right--icon{
+    background: transparent url('../assets/images/Icon\ ionic-ios-arrow-slider-right.png') 0% 0% no-repeat padding-box;
+    background-position: center;
+    margin: 5px auto 5px;
+    height: 18px;
+    width: 14px;
+}
+
+.slider__container{
+    @include flexBox(row, center, center, 75px);
+}
+
+.banner__slider-1--space{
+    width: 50px;
+    height: 3px;
+    background: $color1;
+    display: block;
+    position: relative;
+    
+    &:hover{
+        transition: 0.3s ease-out;
+        animation: auto;
+        background: $color4;
+        .banner__slider-1--number{
+            color: $color4;
+        }
+    }
+
+    ::after{
+        position: absolute;
+        content: '';
+        top: 0;
+        right: -75px;
+        height: 3px;
+        width: 75px;
+        background: $color3;
+        display: inline-block;
+    }
+}
+
+.banner__slider-2--space, .banner__slider-3--space{
+    @extend .banner__slider-1--space;
+}
+
+.banner__slider-4--space{
+    width: 50px;
+    height: 3px;
+    background: $color1;
+    display: block;
+    position: relative;
+    
+    &:hover{
+        transition: 0.3s ease-out;
+        animation: auto;
+        background: $color4;
+        .banner__slider-1--number{
+            color: $color4;
+        }
+    }
+}
+
+.banner__slider-1--number{
+    transition: 0.3s ease-out;
+    animation: auto;
+    color: $color1;
+    font: normal normal normal 18px/25px Prata;
+    padding: 13px 16px;
+    position: relative;
+}
+
+.banner__slider-2--number, .banner__slider-3--number, .banner__slider-4--number{
+    @extend .banner__slider-1--number;
+}
+
+
+.active-slide{
+    background: $color4;
+
+    h2{
+        color: $color4;
+    }
+}
+
+@media screen and (max-width:1400px) {
+
+    .banner__flowerone{
+        left: 107px;
+    }
+    
+    .banner__flowertwo{
+        left: 749px;
+    }
+    
+    .banner__flowerthree{
+        left: 361px;
+    }
+    
+    .banner__leafone{
+        left: 451px;
+    }
+
+    .banner__salon{
+        padding: 202px 75px 0px 70px; 
+    }
+    
+    .banner__experience{
+        padding: 0 75px 20px 70px;
+    }
+
+    .banner__link{
+        left: 70px;
+    }
+
+    .banner__facebook, .banner__instagram{
+        left: 94px;
+    }
+
+    .banner__pointer{
+        left: 98px;
+    }
+}
